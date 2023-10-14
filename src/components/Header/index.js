@@ -4,7 +4,7 @@ import { FaHome, FaSignInAlt, FaUserAlt } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 import { Nav } from './styled';
-import { loginUser, logoutUser } from '../../redux/user/actions';
+import { loginUser, logoutUser } from '../../redux/modules/user/actions';
 
 export default function Header() {
   const { currentUser } = useSelector((rootReducer) => rootReducer.userReducer);
