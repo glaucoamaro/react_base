@@ -6,10 +6,15 @@ const initialState = {
 
 const userReducer = (state = initialState, action) => {
   switch (action.type) {
-    case userActionTypes.LOGIN:
-      return { ...state, currentUser: action.payload };
-    case userActionTypes.LOGOUT:
-      return { ...state, currentUser: null };
+    case userActionTypes.SUCCESS:
+      console.log('success');
+      return state;
+    case userActionTypes.FAIL:
+      console.log('fail');
+      return state;
+    case userActionTypes.REQUEST:
+      console.log('request');
+      return state;
     default:
       return state;
   }

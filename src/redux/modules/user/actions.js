@@ -1,10 +1,14 @@
 import userActionTypes from './action-types';
 
-export const loginUser = (payload) => ({
-  type: userActionTypes.LOGIN,
+export const userRequest = (payload) => ({
+  type: userActionTypes.REQUEST,
   payload,
 });
 
-export const logoutUser = () => ({
-  type: userActionTypes.LOGOUT,
+export const userFail = () => ({
+  type: userActionTypes.FAIL,
+});
+export const userSuccess = (payload) => ({
+  type: userActionTypes.SUCCESS,
+  payload,
 });
