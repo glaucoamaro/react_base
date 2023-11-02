@@ -3,7 +3,7 @@ import { Navigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 export default function PrivateRouter({ children, redirectTo }) {
-  const isLogged = true;
+  const isLogged = false;
   return isLogged ? children : <Navigate to={redirectTo} />;
 }
 

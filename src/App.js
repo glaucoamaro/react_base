@@ -5,7 +5,7 @@ import GlobalStyles from './styles/GlobalStyles';
 import Header from './components/Header';
 import Routes from './routers';
 
-export default function Npp() {
+export default function App() {
   //  const navigate = useNavigate();
 
   //  const handleNavigate = () => {
